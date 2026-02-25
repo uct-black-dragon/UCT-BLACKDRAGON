@@ -1,0 +1,19 @@
+<h2 id="contador">Cargando estado operativo...</h2>
+
+<script>
+async function actualizarContador(){
+const res = await fetch("/contador");
+const data = await res.json();
+
+if(data.restantes <= 0){
+document.getElementById("contador").innerHTML =
+"⚠️ INSCRIPCIONES CERRADAS - CUPO COMPLETO ⚠️";
+document.querySelector("form").style.display = "none";
+} else {
+document.getElementById("contador").innerHTML =
+"Operativos inscritos: " + data.ocupadas +
+" / 40 | Plazas disponibles: " + data.restantes;
+}
+}
+actualizarContador();
+</script>
