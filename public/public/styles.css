@@ -1,0 +1,43 @@
+body {
+    background: #0f1a0f;
+    color: #c4b37a;
+    font-family: 'Arial Black', sans-serif;
+    text-align: center;
+}
+
+.container {
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: #1c2b1c;
+    border: 3px solid #c4b37a;
+    border-radius: 10px;
+}
+
+.escudo {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background: #2e3d2e;
+    border: 1px solid #c4b37a;
+    color: white;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px;
+    background: #3a5f3a;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4f7f4f;
+}
